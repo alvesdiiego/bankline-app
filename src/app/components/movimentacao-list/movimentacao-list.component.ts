@@ -11,11 +11,10 @@ import { Component, OnInit } from '@angular/core';
 export class MovimentacaoListComponent implements OnInit{
     movimentacoes:any;
     correntistas:any;
-    correntista:any;
-  
+    correntista:any={};
   constructor (
     private  movimentacaoService: MovimentacaoService,
-    private  correntistaService: CorrentistaService ) { }
+    private  correntistaService: CorrentistaService, ) { }
 
   ngOnInit(): void {
    this.exibirCorrentistas();

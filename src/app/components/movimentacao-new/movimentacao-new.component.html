@@ -27,7 +27,7 @@
        </div>
        <div class="col-md-4">
            <label for="iValor" class="form-label">R$ Valor</label>
-           <input type="text" [(ngModel)]="valor" currencyMask="{ prefix: 'R$', thousands: '.', decimal: ',' }" class="form-control" id="iValor">
+           <input type="text" [(ngModel)]="valor" currencyMask="{ prefix: 'R$', thousands: '.', decimal: ',' }" class="form-control" id="iValor" placeholder="Informe o valor">
        </div>
        <div class="d-grip gap-2 d-md-flex">
            <button class="btn btn-outline-primary me-md-2 btn-sm"  type="button" (click)="save()">Confirmar</button>

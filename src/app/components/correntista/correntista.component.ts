@@ -7,11 +7,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./correntista.component.css']
 })
 export class CorrentistaComponent implements OnInit {
-correntistas:any;
-nome:any;
-cpf:any;
-constructor(private correntistaService: CorrentistaService) { }
-
+  nome:any;
+  cpf:any;
+  correntistas:any;
+constructor( private correntistaService: CorrentistaService, ) { }
   ngOnInit(): void {
     this.exibirCorrentistas();
   }
